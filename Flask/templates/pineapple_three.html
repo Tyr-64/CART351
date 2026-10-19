@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <body>
+        <h1>Pineapples again again in flask. and YOU are {{someNewVar}}. <br> Funny name. {{someNewList[0]}} {{someNewList[1]}} {{someNewList[2]}}</h1>
+        <img src="/static/images/pineapple.jpeg">
+        <p>{{someNewDict["color"]}}, {{someNewDict["taste"]}}</p>
+            <ul>
+       <!-- JINJA syntax for loop -->
+        {% for item in someNewList %}
+        <!-- output the item-->
+        <li style ="color:purple">{{item}}</li>
+        <!-- close the for loop-->
+        {% endfor %}
+
+        {% if 'haw' in someNewList %}
+                <p> ya haw haw haw its there</p>
+        {% endif %}
+     </ul>
+    </body>
+</html>
